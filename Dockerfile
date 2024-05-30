@@ -12,5 +12,6 @@ RUN cd / && \
 WORKDIR /app
 
 RUN python setup.py install
+RUN mageck --version
 
 ENTRYPOINT echo "Welcome to MAGeCK Docker" & mageck --version & /bin/bash 
