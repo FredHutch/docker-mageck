@@ -21,5 +21,3 @@ RUN R -e "install.packages('knitr', repos='http://cran.rstudio.com/')" && \
     R -e "install.packages('gplots', repos='http://cran.rstudio.com/')" && \
     R -e "install.packages('xtable', repos='http://cran.rstudio.com/')" && \
     R -e "install.packages('RColorBrewer', repos='http://cran.rstudio.com/')"
-
-ENTRYPOINT echo "Welcome to MAGeCK Docker" & mageck --version & /bin/bash 
