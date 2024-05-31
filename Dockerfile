@@ -1,7 +1,7 @@
 FROM python:3.8.6
 
 RUN apt-get update && \
-    apt-get install -y git r-base
+    apt-get install -y git r-base texinfo
 
 RUN pip install numpy scipy
 
