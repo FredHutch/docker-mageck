@@ -1,7 +1,8 @@
 FROM python:3.8.6
 
 RUN apt-get update && \
-    apt-get install -y git r-base texinfo
+    apt-get install -y git r-base texinfo texlive texlive-latex-extra texlive-fonts-recommended && \
+    apt-get clean
 
 RUN pip install numpy scipy
 
